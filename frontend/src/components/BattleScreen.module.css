@@ -1,0 +1,63 @@
+.screen { width: 100%; margin: 0; padding: 1rem clamp(1rem, 3vw, 3rem); }
+.topbar { display: flex; align-items: center; margin-bottom: 16px; gap: 10px; }
+.backBtn { padding: 7px 14px; border-radius: 8px; border: 1.5px solid var(--border2); background: none; color: var(--text2); font-size: 13px; }
+.backBtn:hover { background: var(--surface2); }
+.title { flex: 1; text-align: center; font-size: 18px; font-weight: 600; }
+
+.layout { display: flex; gap: 10px; align-items: stretch; margin-bottom: 12px; }
+
+.panel {
+  flex: 0 0 190px; background: var(--surface); border-radius: 14px;
+  padding: 16px; border: 1.5px solid var(--border); display: flex; flex-direction: column; gap: 8px;
+}
+.panelHead { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.panelAvatar { width: 52px; height: 52px; border-radius: 50%; border: 2px solid var(--border2); flex-shrink: 0; background-position: center; }
+.panelName { font-size: 15px; font-weight: 600; word-break: break-word; }
+.panelClass { font-size: 12px; font-weight: 500; margin-top: 2px; }
+.hpBar { height: 11px; background: var(--border); border-radius: 5px; overflow: hidden; }
+.hpFill { height: 100%; border-radius: 5px; transition: width .2s; }
+.hpText { font-size: 12px; color: var(--text2); text-align: center; }
+.stat { display: flex; justify-content: space-between; font-size: 13px; color: var(--text2); padding: 1px 0; }
+.panelSkills { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+.panelSkillChip {
+  font-size: 11px; padding: 2px 7px; border-radius: 7px;
+  border: 1px solid; background: rgba(255,255,255,.04);
+  white-space: nowrap; cursor: default;
+}
+.stat span:last-child { font-weight: 600; color: var(--text); }
+
+.arenaWrap { flex: 1; }
+.canvas { width: 100%; border-radius: 14px; border: 2px solid #34495e; display: block; }
+
+.liveLog {
+  background: var(--surface); border-radius: 12px; padding: 10px 14px;
+  border: 1.5px solid var(--border); max-height: 90px; overflow-y: auto;
+}
+.logEntry { font-size: 11px; padding: 2px 0; border-bottom: 1px solid var(--border); color: var(--text2); }
+.logEntry:last-child { border: none; }
+.latest { color: var(--text); }
+
+/* Winner overlay */
+.overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,.65);
+  display: flex; align-items: center; justify-content: center; z-index: 200;
+}
+.popup {
+  background: var(--surface2); border-radius: 20px; padding: 28px;
+  width: 300px; border: 1.5px solid var(--border2);
+  text-align: center; display: flex; flex-direction: column; gap: 10px;
+}
+.popupTitle { font-size: 15px; font-weight: 600; }
+.winIcon { font-size: 48px; }
+.winLabel { font-size: 16px; font-weight: 600; }
+.winName { font-size: 24px; font-weight: 700; color: var(--gold); }
+.popupBtns { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; }
+.popupBtn {
+  padding: 11px; border-radius: 10px; background: var(--blue);
+  color: #fff; font-size: 14px; font-weight: 600;
+}
+.secondary { background: none; border: 1.5px solid var(--border2); color: var(--text); }
+.backLogBtn { padding: 10px; border-radius: 10px; border: 1.5px solid var(--border2); background: none; color: var(--text); font-size: 13px; }
+
+.logScroll { max-height: 300px; overflow-y: auto; text-align: left; margin-bottom: 4px; }
+.logScroll .logEntry { padding: 3px 0; }
