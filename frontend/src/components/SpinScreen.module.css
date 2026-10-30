@@ -37,7 +37,7 @@
 .nameInput:focus { outline: none; border-color: var(--blue); }
 
 .avatarBox {
-  width: 100%; height: 60px; border: 2px dashed var(--border2); border-radius: 10px;
+  width: 100%; height: 160px; border: 2px dashed var(--border2); border-radius: 10px;
   display: flex; align-items: center; justify-content: center; gap: 4px; flex-direction: column;
   cursor: pointer; overflow: hidden; background: var(--surface); color: var(--text2); font-size: 11px;
 }
